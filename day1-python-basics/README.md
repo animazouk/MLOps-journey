@@ -36,16 +36,4 @@
 
 ---
 
-### Pro Tips:
-- Add GitHub badges: e.g., ![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
-- Live Demo: Run scripts locally with `python script.py`
-- Quiz Score: 100% (Self-graded on strings, numbers, input)
-
----
-
-**Next:** Day 2 → Loops, Full FizzBuzz, Lists  
-**Commit:** `Day 1: Python syntax mastered`  
-
----
-
 **Update Note:** README updated on November 13, 2025, to include master script and quiz.
