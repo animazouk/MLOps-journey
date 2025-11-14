@@ -1,126 +1,174 @@
-print("\n")
-# Lists---->
-friends = ["adarsh","divyansh","Deepak"]
-jobs = ["painter","labour","contractor"]
-print(friends)
-print(jobs)
-print("\n")
-    #Indexing & slicing
-print(friends[0])  # fetches the first value
+# ================================================
+# DAY 2: LOOPS, LISTS, FUNCTIONS, DICTIONARIES
+# Author: Adarsh Vishwakarma (@adarsh4553)
+# Date: November 13, 2025
+# Repo: github.com/adarsh4553/MLOPS-journey
+# ================================================
+
+print("\n" + "="*60)
+print(" DAY 2: LOOPS, LISTS, FUNCTIONS, DICTIONARIES ")
+print("="*60 + "\n")
+
+# ------------------------------------------------
+# 1. LISTS
+# ------------------------------------------------
+print("1. LISTS")
+friends = ["adarsh", "divyansh", "Deepak"]
+jobs = ["painter", "labour", "contractor"]
+print(f"Friends: {friends}")
+print(f"Jobs: {jobs}\n")
+
+# Indexing & Slicing
+print("Indexing & Slicing:")
+print(f"First friend: {friends[0]}")
 friends[1] = "Divyanshi"
-print(friends[-1]) #fetches the last value
-print(friends[0:])#this will return all elements from 1 till end
-print(friends[0:2])# this says fetch include elements on index 1,2 which can be said to till 3(excluding 3).
+print(f"Last friend: {friends[-1]}")
+print(f"All from start: {friends[0:]}")
+print(f"First two: {friends[0:2]}\n")
 
-print("\n")
-    #List functions
-friends.extend(jobs);print(friends) #concatinates job at the end of friends list
-friends.append("ADHYA");print(friends)  #adds the passed elements at the end of the list 
-friends.insert(2,"Luv");print(friends)  # enters at a perticular position in the list
-friends.remove("ADHYA");print(friends)  #passes elemnet gets removed from the list
-friends.index("Deepak");print(friends)  #retuens the postion of the passed elements first occurance in the list.
-friends.count("ADHYA");print(friends)  # counts the number of tiume the oassed elemnt has ben occured
-friends.sort();print(friends) #sorts elements of a list 
-friends.reverse();print(friends)  # revers the elements of the list
-f1 = friends.copy();print(friends)  # copies the content of the list to another one 
-friends.pop();print(friends)  # just removes the last element from the list 
-# friends.clear();print(friends)  # clear the list completly [makes it empty]
+# List Functions
+print("List Functions:")
+friends.extend(jobs)
+print(f"After extend(jobs): {friends}")
 
+friends.append("ADHYA")
+print(f"After append: {friends}")
 
-print("\n")
-#TUPLES------->
+friends.insert(2, "Luv")
+print(f"After insert(2, 'Luv'): {friends}")
 
-coordinate = (4,5) # tuples are immutable every change actually returns a copy without effecting the actual tupple
-print()
+friends.remove("ADHYA")
+print(f"After remove('ADHYA'): {friends}")
 
-# List of Tuples
-coordinates = [(4,5),(6,4),(-3,6)]
-print(coordinates[0]) # prints the first tuple
-print(coordinates[0][1]) # prints the second element of the first tuple
+print(f"Index of 'Deepak': {friends.index('Deepak')}")
 
-print("\n")
-#Functions------>
+friends.append("adarsh")
+print(f"Count of 'adarsh': {friends.count('adarsh')}")
+
+friends.sort()
+print(f"After sort(): {friends}")
+
+friends.reverse()
+print(f"After reverse(): {friends}")
+
+f1 = friends.copy()
+print(f"Copy: {f1}")
+
+friends.pop()
+print(f"After pop(): {friends}\n")
+
+# ------------------------------------------------
+# 2. TUPLES
+# ------------------------------------------------
+print("2. TUPLES")
+coordinate = (4, 5)
+print(f"Coordinate: {coordinate}")
+
+coordinates = [(4,5), (6,4), (-3,6)]
+print(f"First tuple: {coordinates[0]}")
+print(f"Second value of first tuple: {coordinates[0][1]}\n")
+
+# ------------------------------------------------
+# 3. FUNCTIONS
+# ------------------------------------------------
+print("3. FUNCTIONS")
 def sayhi(name):
-    print("hello "+ name)
+    print(f"Hello {name}")
 
 print("top")
 sayhi("Adarsh")
-print("bottom")
+print("bottom\n")
 
 def cube(num):
-    return num*num*num
+    return num ** 3
 
 result = cube(3)
-print(result)
+print(f"Cube of 3: {result}\n")
 
-#if/else/elif/nested elif---->
+# ------------------------------------------------
+# 4. IF/ELIF/ELSE + NESTED
+# ------------------------------------------------
+print("4. CONTROL FLOW")
 is_male = True
 is_tall = True
 
 if is_male or is_tall:
     if is_male and is_tall:
-        print("tall male")
-    elif is_male and not(is_tall):
-        print("male but not tall")
+        print("Tall male")
+    elif is_male and not is_tall:
+        print("Male but not tall")
     else:
-        print("not male probably not tall")
+        print("Not male, probably not tall")
+else:
+    print("Not male and not tall")
+print()
 
-#if statements using comparisons--->
-
-def max_num(num1,num2,num3):
-    if num1 >= num2 and num1 >= num3:
-        return num1
-    elif num2>=num1 and num2 >= num3:
-        return num2
+# ------------------------------------------------
+# 5. COMPARISONS IN FUNCTION
+# ------------------------------------------------
+def max_num(n1, n2, n3):
+    if n1 >= n2 and n1 >= n3:
+        return n1
+    elif n2 >= n1 and n2 >= n3:
+        return n2
     else:
-        return num3
-    
-print(max_num(1,2,3))
+        return n3
 
-#Dictionaries ------->
- 
+print(f"Max of 1,2,3: {max_num(1,2,3)}\n")
+
+# ------------------------------------------------
+# 6. DICTIONARIES
+# ------------------------------------------------
+print("6. DICTIONARIES")
 month_conversion = {
-   "Jan":"January",
-    "Feb":"February",
-    "Oct":"October",
-    "Nov":"November",
-    "Dec":"December"
- }
+    "Jan": "January",
+    "Feb": "February",
+    "Oct": "October",
+    "Nov": "November",
+    "Dec": "December"
+}
+print(month_conversion.get("Feb", "Not a valid key"))
+print(month_conversion.get("XYZ", "Invalid month!"))  # Default used
+print()
 
-print(month_conversion.get("Feb","Not a valid key")) 
-''' the second argument is a default argument 
-passed so the if the key dont exists 
-in the dictionary the defult value gets 
-return and the program keep s running 
-without any errors. '''
-
-# While loop
-
+# ------------------------------------------------
+# 7. WHILE LOOP
+# ------------------------------------------------
+print("7. WHILE LOOP")
 i = 1
 while i <= 10:
-    print(i)
+    print(i, end=" ")
     i += 1
+print("\n")
 
-#For loop -------->
-
+# ------------------------------------------------
+# 8. FOR LOOP
+# ------------------------------------------------
+print("8. FOR LOOP")
 for letter in "Air Force School":
-    print(letter)
+    print(letter, end="")
+print("\n")
 
 for friend in friends:
     print(friend)
 
-for x in range(3,10):
-    print(x)
+print("Range 3 to 9:")
+for x in range(3, 10):
+    print(x, end=" ")
+print("\n")
 
-#Exponent Function
-
-def raistopower(base,power):
+# ------------------------------------------------
+# 9. EXPONENT FUNCTION
+# ------------------------------------------------
+print("9. EXPONENT FUNCTION")
+def raise_to_power(base, power):
     result = 1
-    for index in range(power):
-        result = result * base
+    for _ in range(power):
+        result *= base
     return result
 
-a = raistopower(2,3)
+print(f"2^3 = {raise_to_power(2, 3)}")
+
+a = " add Buy Milk"
 print(a)
-
-
+print(a.strip())
