@@ -9,7 +9,7 @@ rather then there addition because python takes input
 from the user in string format thus we need to convert 
 them to numbers befopre hand '''
 
-# result2 = int(num1) + int(num2) 4.5
+# result2 = int(num1) + int(num2)
 #  now this will convert them into whole values thus ignoring the decimal values 
 result3 = float(num1) + float(num2) # now we are good
 

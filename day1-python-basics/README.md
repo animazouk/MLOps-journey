@@ -1,39 +1,29 @@
-# Day 1: Python Basics ✅
+# Day 1: Python Basics
 
 **Date:** November 12, 2025  
 **Time:** 10:30 PM → 1:00 AM IST  
 **Handle:** [@adarsh4553](https://x.com/adarsh4553)  
-**Goal:** Master Python syntax in 2.5 hrs
+**Repo:** [github.com/adarsh4553/MLOPS-journey](https://github.com/adarsh4553/MLOPS-journey)
+
+---
+
+### What I Learned:
+- `print()`, `\n`, escape sequences
+- String methods: `.lower()`, `len()`, `.index()`, `.replace()`
+- Number operations: `abs()`, `pow()`, `max()`, `BODMAS`
+- `from math import *` → `floor()`, `ceil()`, `sqrt()`
+- `input()` + type conversion `str()`
+- f-strings and concatenation
 
 ---
 
 ### Files:
-1. `hello_world.py` → Print basics  
-2. `calculator.py` → Math operations  
-3. `even_odd_checker.py` → `input()` + `if/else`  
-4. `personalized_greeting.py` → f-strings  
-5. `fizzbuzz_mini.py` → `for` loop + conditions  
-6. `day1_master_script.py` → Combined learnings (strings, numbers, math module, input)  
-7. `day1_quiz.py` → Auto-graded quiz (5 questions with solutions)
+- `day-Python-master-script.py` → Full learning log
+- `README.md` → Portfolio entry
 
 ---
 
-### Learned:
-- Variables and data types (e.g., strings, numbers)
-- `print()` with escape sequences (e.g., `\n` for newline)
-- String methods: `.lower()`, `len()`, `.index()`, `.replace()`
-- Number operations: Negative/positive, BODMAS, concatenation with `str()`
-- Math module: `from math import *` → `abs()`, `pow()`, `max()`, `floor()`, `ceil()`, `sqrt()`
-- User input: `input()` + concatenation/f-strings
-- Operators: `+ - * / // % **`
-- Control flow: `if/elif/else`
-- Loops: `range()`, `for` (mini FizzBuzz)
+**Next:** Day 2 → Loops, FizzBuzz, Lists  
+**Commit:** `Day 1: Python basics mastered - strings, numbers, input`
 
 ---
-
-### Resources:
-- freeCodeCamp Python Course: [YouTube Link](https://www.youtube.com/watch?v=rfscVS0vtbw) (Watched 0:00–1:00 for basics)
-
----
-
-**Update Note:** README updated on November 13, 2025, to include master script and quiz.

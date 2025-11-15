@@ -7,7 +7,3 @@ while guess != secret_word:
 print("Correct!!\nyour win")
 
 print("\n")
-#For loop -------->
-
-for letter in "Air Force Scool":
-    print(letter)

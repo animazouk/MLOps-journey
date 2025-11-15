@@ -168,7 +168,48 @@ def raise_to_power(base, power):
     return result
 
 print(f"2^3 = {raise_to_power(2, 3)}")
+print("\n")
 
-a = " add Buy Milk"
-print(a)
-print(a.strip())
+# ------------------------------------------------
+# 10. IDIOM
+# ------------------------------------------------
+# The line
+if __name__ == "__main__":
+    main()
+# is a common Python idiom that controls the execution of code when a script is run directly versus when it is imported as a module in another script.
+
+# Explanation:
+'''
+
+__name__ is a special built-in variable in Python that represents the name of the current module.
+
+When you run the script directly (for example, python script.py), Python sets __name__ to the string "__main__".
+
+When the same script is imported as a module in another Python script, __name__ is set to the module's filename (without the .py extension), not "__main__".
+
+What this means:
+
+The code inside the if __name__ == "__main__": block will only run when you execute the script directly.
+
+It will not run when the file is imported as a module by another script.
+
+Why use it?
+
+This idiom allows you to define a main() function (or similar entry point) that contains code for testing or running the script interactively, while keeping the module's functions and classes clean for use elsewhere without side effects.
+
+Example:
+
+python
+def main():
+    print("This only runs when executed directly.")
+
+if __name__ == "__main__":
+    main()
+Running python script.py outputs:
+This only runs when executed directly.
+
+Importing this file in another script won't print anything since the main() won't run.
+
+In short, this allows your Python file to be both reusable as a module and runnable as a standalone script safely. It is essential for writing clean, modular Python code.
+
+'''
