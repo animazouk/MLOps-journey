@@ -100,7 +100,7 @@ if not grid:
 print()
 
 # ------------------------------------------------
-# 5. secrets.choice(sequence)
+# 6. secrets.choice(sequence)
 # ------------------------------------------------
 import secrets
 char = secrets.choice(pool)  # What does this pick?
@@ -115,9 +115,9 @@ It picks one item from it uniformly at random, using cryptographically secure ra
 print()
 
 
-# ------------------------------------------------
-# 6. SECURE PASSWORD GENERATOR (MASTER REUSABLE TEMPLATE)
-# ------------------------------------------------
+# ========================================================
+# 7. SECURE PASSWORD GENERATOR (MASTER REUSABLE TEMPLATE)
+# ========================================================
  
 import secrets
 import string
