@@ -102,6 +102,7 @@ print()
 # ------------------------------------------------
 # 6. secrets.choice(sequence)
 # ------------------------------------------------
+pool = "ajafbdsfkakasfb"
 import secrets
 char = secrets.choice(pool)  # What does this pick?
 '''
@@ -233,3 +234,28 @@ if __name__ == "__main__":
     print("No special, 10-char:", generate_secure_password(10, include_special=False))
     print("Only digits+upper:", generate_secure_password(8, include_lower=False, include_special=False))
     print("Require each type:", generate_secure_password(12, require_one_from_each=True))
+<<<<<<< HEAD:day3-functions-opps/1_Day3_master_script.py
+=======
+
+#--------------------------------------------------------------------------
+# 7. *args and **kwargs
+# -------------------------------------------------------------------------
+
+# *args --->
+def display_name(*args):
+    for arg in args:
+        print(arg, end=" ")
+
+display_name("Adarsh", "Vishwakarma", "Ada")
+
+# **kwargs --->
+
+def print_address(**kwargs):
+    for key, vakue in kwargs.items():
+        print(f"{key}: {value}")
+
+print_address(street = "123 fake str",
+              city = "Detroit",
+              state = "MI",
+              zip = "208010")
+>>>>>>> 006c0dc (Day 4: OOP – classes, properties, static methods, BankAccount):day3-functions-modules_and_more/1_Day3_master_script.py
